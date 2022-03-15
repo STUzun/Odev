@@ -6,9 +6,35 @@ package Odev;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 class AppTest {
     @Test void appHasAGreeting() {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
+    @Test
+    public void testArrayIsBetweenTwoNumbers() {
+       ArrayList<Integer> array = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
+       assertTrue(App.isBetween(array, 0, 7));
+     }
+ 
+     @Test
+     public void testArrayIsNotBetweenTwoNumbers() {
+       ArrayList<Integer> array = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
+       assertFalse(App.isBetween(array, 5, 9));
+     }
+ 
+     @Test
+     public void testEmptyArray() {
+       ArrayList<Integer> array = new ArrayList<>();
+       assertFalse(App.isBetween(array, 7, 7));
+     }
+ 
+     @Test
+     public void testNull() {
+       assertFalse(App.isBetween(null, 7, 7));
+     }
+ 
 }

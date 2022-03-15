@@ -13,10 +13,10 @@ public class App {
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
     }
-    public static boolean isBetween(ArrayList<Integer> array, int min, int max) {
+    public static boolean isBetween(ArrayList<Integer> array, Integer min, Integer max) {
         System.out.println("inside search");
         if (array == null) return false;
-  
+        if (array.isEmpty())return false;
         for (int elt : array) {
           if (elt < min || elt > max) return false;
         }
