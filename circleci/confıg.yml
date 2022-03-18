@@ -1,8 +1,0 @@
-version: 2.1 
-jobs:
-  test:
-    docker:
-      - image: cimg/openjdk:17.0.2
-    steps:
-      - checkout
-      - run: java --version
