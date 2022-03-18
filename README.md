@@ -5,4 +5,5 @@ Circleci icin:
 
 [![STUzun](https://circleci.com/gh/STUzun/Odev.svg?style=svg)](https://app.circleci.com/pipelines/github/STUzun/Odev/7/workflows/1fa82b53-e095-482a-a8cd-3fae93112a04)
 
+Demo site: https://blooming-retreat-11014.herokuapp.com/
 
